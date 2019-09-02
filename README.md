@@ -5,6 +5,8 @@ This extension registers 1 command that will toggle view between source file and
 ## Features
 
 When the command is issued, your editor will jump to the alternative file if the extension is able to find one.
+It will try to find file with the same name as close to the current one as possible within subtree.
+Press `ALT` + `T` to jump between files
 
 ## Release Notes
 
