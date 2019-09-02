@@ -2,13 +2,22 @@
 	"name": "jump-to-alternative",
 	"displayName": "Jump to alternative file",
 	"description": "Jump between source and test files with ease",
+	"publisher": "vladimir-penkin",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.37.0"
 	},
+	"author": {
+		"name": "Vladimir Penkin"
+	},
 	"categories": [
 		"Other"
 	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/shell/vscode-jump-to-alternative.git"
+	},
+	"homepage": "https://github.com/shell/vscode-jump-to-alternative/blob/master/README.md",
 	"activationEvents": [
 		"onCommand:extension.jumpToAlternative"
 	],
