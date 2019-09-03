@@ -19,10 +19,10 @@ export function activate(context: vscode.ExtensionContext) {
 		const fileName = splitFileName.slice(0,-1).join('');
 		const extension = splitFileName[splitFileName.length-1];
 
-		let globPattern = `**/*${fileName}`;
+		let globPattern = `**/${fileName}`;
 		globPattern = determineGlobPattern(globPattern, extension);
 
-		vscode.workspace.findFiles(globPattern, null, 10).then((found: vscode.Uri[]): void => {
+		vscode.workspace.findFiles(globPattern, '**/node_modules/**', 10).then((found: vscode.Uri[]): void => {
 			if (found.length === 0) {
 				vscode.window.setStatusBarMessage('jumpToAlternative: Unable to find test file', 3000);
 				return;
