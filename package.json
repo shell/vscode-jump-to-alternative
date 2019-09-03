@@ -3,7 +3,7 @@
 	"displayName": "Jump to alternative file",
 	"description": "Jump between source and test files with ease",
 	"publisher": "vladimir-penkin",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"engines": {
 		"vscode": "^1.37.0"
 	},
